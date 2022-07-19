@@ -1,11 +1,7 @@
 #!/usr/bin/python3
-"""
-no module imported
-"""
+"""Square module."""
 
 
 class Square:
-    """
-    Empty class that defines a square
-    """
+    """Defines a square"""
     pass
