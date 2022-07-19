@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""
-This module defines a Square class
-"""
+"""Documentation for a square class"""
 
 
-class Square:
-    """This class is a squeleton for Square
+class Square():
+    """ Square class of a quadrilateral with four equal sides
+        Attributes:
+              None
     """
     pass
