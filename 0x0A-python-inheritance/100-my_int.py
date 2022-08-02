@@ -1,20 +1,17 @@
 #!/usr/bin/python3
-"""Module 100-my_int.py.
-Inherits from int
-"""
+"""inherits from int"""
 
 
 class MyInt(int):
-    """Class inheriting from int,
-    reversing the behavior of != and ==.
-    """
+    """MyInt class inherits from int"""
+    def __eq__(self, other_int):
+        """inverted =="""
+        if self is not other_int:
+            return False
+        return True
 
-    def __eq__(self, other):
-        """Equality becomes inequality."""
-
-        return super().__ne__(other)
-
-    def __ne__(self, other):
-        """Inequality becomes equality."""
-
-        return super().__eq__(othe
+    def __ne__(self, other_int):
+        """inverted !="""
+        if self is other_int:
+            return False
+        return True
