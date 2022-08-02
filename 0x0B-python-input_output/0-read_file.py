@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-"""module to read a text file"""
-
+"""Documentation for read_file location"""
 
 def read_file(filename=""):
-    """reads a text file and prints it to stdout"""
-    with open(filename, encoding="utf-8") as f:
-        for line in f:
-            print(line, end="")
+    """Function that reads the file and prints its contents to stdout
+    
+    Args:
+        filename (str): the filename to open
+    """
+
+    with open(filename, encoding='utf-8') as f:
+        for l in f:
+            print(l, end="")
