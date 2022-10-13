@@ -1,13 +1,9 @@
 #!/usr/bin/node
-let temp = require('./101-data');
-temp = temp.dict;
-let MYDICT = {};
-for (let key in temp) {
-  // MYDICT[temp[i]].push(temp[i]);
-  // TypeError: Cannot read property 'push' of undefined FUUUU
-  if (MYDICT[temp[key]] === undefined) {
-    MYDICT[temp[key]] = [];
-  }
-  MYDICT[temp[key]].push(key);
-}
-console.log(MYDICT);
+// function that returns the number of occurrences in a list
+
+const originalList = require('./100-data').list;
+console.log(originalList);
+const mappedList = originalList.map (function (e, index) {
+  return (e * index);
+});
+console.log(mappedList);
