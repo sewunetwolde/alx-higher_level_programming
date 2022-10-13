@@ -1,12 +1,18 @@
 #!/usr/bin/node
+// Computes and prints a factorial recursively
 
-const process = require('process');
-const arg = parseInt(process.argv[2]);
-function factorial (arg) {
-  if (arg === 1 || isNaN(arg)) {
+function factorial (n) {
+  if (n === 1) {
     return (1);
-  } else {
-    return (arg * factorial(arg - 1));
   }
+  return (n * factorial(n - 1));
 }
-console.log(factorial(arg));
+
+const args = process.argv;
+
+if (isNaN(args[2])) {
+  console.log('1');
+} else {
+  let num = factorial(parseInt(args[2], 10));
+  console.log(num);
+}
